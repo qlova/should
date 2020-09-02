@@ -53,9 +53,9 @@ func Test_NotError(t *testing.T) {
 }
 
 func Test_Be(t *testing.T) {
-	should.Be(3, 3).Test(t)
+	should.Be(3)(3).Test(t)
 
 	should.Error(
-		should.Be(3, 1),
+		should.Be(3)(1),
 	).Test(t)
 }

@@ -33,7 +33,7 @@ func Trace(err error) (out error) {
 
 		var name = splits[len(splits)-1]
 
-		out = fmt.Errorf("%v:%v %w", name, line, err)
+		out = fmt.Errorf("(%v:%v) %w", name, line, err)
 	}
 	return
 }

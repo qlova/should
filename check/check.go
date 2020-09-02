@@ -13,7 +13,7 @@ func Return(into *error) {
 //Returnf should be deferred in functions that pass errors to their caller, pass the named return value that errors should be passed to.
 //The format string should be a constant.
 func Returnf(format string, into *error) {
-	if err := recover().(error); err != nil {
+	if err, ok := recover().(error); ok && err != nil {
 		*into = fmt.Errorf(format, err)
 	}
 }

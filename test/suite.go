@@ -35,8 +35,8 @@ func New(testsuite Suite) Test {
 	return func(t *testing.T) {
 		testsuite.SetT(t)
 
-		if _, ok := value.Type().MethodByName("SetupSuite"); ok {
-			value.MethodByName("SetupSuite").Call(nil)
+		if _, ok := value.Addr().Type().MethodByName("SetupSuite"); ok {
+			value.Addr().MethodByName("SetupSuite").Call(nil)
 		}
 
 		for i := 0; i < value.NumMethod(); i++ {
