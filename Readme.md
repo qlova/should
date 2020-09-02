@@ -1,6 +1,6 @@
 # YOU SHOULD CHECK ERRORS AND TEST!
 
-[![Report Card](https://goreportcard.com/badge/github.com/qlova/should)](https://goreportcard.com/badge/github.com/qlova/should) [![Build Status](https://travis-ci.org/qlova/should.svg?branch=master)](https://travis-ci.org/qlova/should.svg?branch=master) [![Coverage Status](https://coveralls.io/repos/github/qlova/should/badge.svg?branch=master)](https://coveralls.io/github/qlova/should?branch=master)
+[![Report Card](https://goreportcard.com/badge/github.com/qlova/should)](https://goreportcard.com/badge/github.com/qlova/should) [![Build Status](https://travis-ci.org/qlova/should.svg?branch=master)](https://travis-ci.org/qlova/should.svg?branch=master) [![Coverage Status](https://coveralls.io/repos/github/qlova/should/badge.svg?branch=master)](https://coveralls.io/github/qlova/should?branch=master) [![Documentation](https://pkg.go.dev/badge/qlova.org/should)](https://pkg.go.dev/qlova.org/should)
 
 This module provides error-checking and testing utilities that **YOU SHOULD USE**.
 
