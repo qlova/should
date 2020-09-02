@@ -1,6 +1,6 @@
 # YOU SHOULD CHECK ERRORS AND TEST!
 
-![Report Card](https://goreportcard.com/badge/github.com/qlova/should)
+![Report Card](https://goreportcard.com/badge/github.com/qlova/should) ![Build Status](https://travis-ci.org/qlova/should.svg?branch=master&status=started)
 
 This module provides error-checking and testing utilities that **YOU SHOULD USE**.
 
