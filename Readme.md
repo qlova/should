@@ -1,4 +1,6 @@
-# YOU SHOULD CHECK ERRORS, YOU SHOULD TEST!
+# YOU SHOULD CHECK ERRORS AND TEST!
+
+![Report Card](https://goreportcard.com/badge/github.com/qlova/should)
 
 This module provides error-checking and testing utilities that **YOU SHOULD USE**.
 
