@@ -36,6 +36,22 @@ func (t TestSuite) Test_Error() {
 	var d = test.Discard()
 
 	should.Panic(func() {
+
+		d.Cleanup(nil)
+		d.Error()
+		d.Errorf("")
+		d.Fail()
+		d.FailNow()
+		d.Fatal()
+		d.Fatalf("")
+		d.Helper()
+		d.Log()
+		d.Logf("")
+		d.Parallel()
+		d.Skip()
+		d.SkipNow()
+		d.Skipf("")
+
 		d.Deadline()
 		d.Failed()
 		d.Name()
