@@ -4,6 +4,7 @@ package should
 import (
 	"errors"
 	"fmt"
+	"reflect"
 
 	"qlova.org/should/test"
 )
@@ -56,7 +57,7 @@ func NotError(args ...interface{}) test.Error {
 //Be returns an error if the first varadic argument is not equal to the given value.
 func Be(value interface{}) func(args ...interface{}) test.Error {
 	return func(args ...interface{}) test.Error {
-		if value != args[0] {
+		if !reflect.DeepEqual(value, args[0]) {
 			return test.Error{fmt.Errorf("should be %v but found %v", value, args[0])}
 		}
 		return nil
