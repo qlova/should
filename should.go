@@ -48,8 +48,8 @@ func Error(args ...interface{}) test.Error {
 
 //NotError returns an error if its last argument is not nil.
 func NotError(args ...interface{}) test.Error {
-	if args[len(args)-1] != nil {
-		return test.Error{errors.New("should not have been an error")}
+	if err := args[len(args)-1]; err != nil {
+		return test.Error{fmt.Errorf("should not have been an error: %w", err)}
 	}
 	return nil
 }
