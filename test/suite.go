@@ -39,10 +39,10 @@ func New(testsuite Suite) Test {
 			value.Addr().MethodByName("SetupSuite").Call(nil)
 		}
 
-		for i := 0; i < value.NumMethod(); i++ {
-			method := value.Method(i)
+		for i := 0; i < value.Addr().NumMethod(); i++ {
+			method := value.Addr().Method(i)
 
-			if strings.HasPrefix(value.Type().Method(i).Name, "Test") {
+			if strings.HasPrefix(value.Addr().Type().Method(i).Name, "Test") {
 				method.Call(nil)
 			}
 		}
